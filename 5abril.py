@@ -62,4 +62,16 @@ while entrada != contraseña:
     
 print("contraseña correcta")
 
+#adivinar el numero
+import random
+secreto = random.randint(1, 10)
+adivino = False
 
+while not adivino:
+    intento = int(input("Adivina el número (entre 1 y 10): "))
+
+    if intento == secreto:
+        print("adivinaste")
+        adivino = True
+    else:
+        print("No adivinaste. Intenta de nuevo.")
